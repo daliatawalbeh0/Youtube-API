@@ -23,7 +23,7 @@
         </option>
       </select>
     </div>
-    <div id="displaytitle"></div>
+
     <br /><br />
     <div><img id="displaythum" /></div>
     <br /><br />
@@ -49,10 +49,6 @@
           })
           .then((data) => {
             console.log(data);
-
-            document.getElementById(
-              "displaytitle"
-            ).textContent = `${data.items[0].snippet.title}`;
 
             const thum = document.getElementById("displaythum");
             thum.setAttribute(
